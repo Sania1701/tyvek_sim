@@ -334,9 +334,6 @@ CMakeFiles/sim.dir/generator.cc.o: \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ParticleTableIterator.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ParticleTable.icc \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4OpticalPhoton.hh \
- /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/RunAction.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4UserRunAction.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/globals.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/Randomize.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/CLHEP/Random/Randomize.h \
  /home/sanialewis/anaconda3/envs/geant4-env/include/CLHEP/Random/defs.h \

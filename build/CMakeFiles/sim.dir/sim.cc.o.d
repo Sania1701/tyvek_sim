@@ -731,6 +731,9 @@ CMakeFiles/sim.dir/sim.cc.o: \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4DisplacedSolid.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VBooleanProcessor.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4BooleanSolid.icc \
+ /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/RunAction.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4UserRunAction.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/globals.hh \
  /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/physics.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VModularPhysicsList.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VPhysicsConstructor.hh \
@@ -755,7 +758,4 @@ CMakeFiles/sim.dir/sim.cc.o: \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ParticleGun.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VPrimaryGenerator.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ParticleTable.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4OpticalPhoton.hh \
- /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/RunAction.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4UserRunAction.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/globals.hh
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4OpticalPhoton.hh
