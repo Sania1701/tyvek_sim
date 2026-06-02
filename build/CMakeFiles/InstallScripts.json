@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/sanialewis/Documents/Tyvek/geant4-simulation/sim/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,4 @@
+/home/sanialewis/Documents/Tyvek/geant4-simulation/sim/build/CMakeFiles/sim.dir
+/home/sanialewis/Documents/Tyvek/geant4-simulation/sim/build/CMakeFiles/Simulation.dir
+/home/sanialewis/Documents/Tyvek/geant4-simulation/sim/build/CMakeFiles/edit_cache.dir
+/home/sanialewis/Documents/Tyvek/geant4-simulation/sim/build/CMakeFiles/rebuild_cache.dir
