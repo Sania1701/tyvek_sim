@@ -142,30 +142,6 @@ Simulation/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simulation.dir/build.make CMakeFiles/Simulation.dir/build
 .PHONY : Simulation/fast
 
-RunAction.o: RunAction.cc.o
-.PHONY : RunAction.o
-
-# target to build an object file
-RunAction.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/RunAction.cc.o
-.PHONY : RunAction.cc.o
-
-RunAction.i: RunAction.cc.i
-.PHONY : RunAction.i
-
-# target to preprocess a source file
-RunAction.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/RunAction.cc.i
-.PHONY : RunAction.cc.i
-
-RunAction.s: RunAction.cc.s
-.PHONY : RunAction.s
-
-# target to generate assembly for a file
-RunAction.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/RunAction.cc.s
-.PHONY : RunAction.cc.s
-
 action.o: action.cc.o
 .PHONY : action.o
 
@@ -296,9 +272,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Simulation"
 	@echo "... sim"
-	@echo "... RunAction.o"
-	@echo "... RunAction.i"
-	@echo "... RunAction.s"
 	@echo "... action.o"
 	@echo "... action.i"
 	@echo "... action.s"

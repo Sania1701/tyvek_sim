@@ -1,7 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sim.dir/link.d"
-  "CMakeFiles/sim.dir/RunAction.cc.o"
-  "CMakeFiles/sim.dir/RunAction.cc.o.d"
   "CMakeFiles/sim.dir/action.cc.o"
   "CMakeFiles/sim.dir/action.cc.o.d"
   "CMakeFiles/sim.dir/construction.cc.o"

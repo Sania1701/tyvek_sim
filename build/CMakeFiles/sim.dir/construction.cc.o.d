@@ -416,9 +416,6 @@ CMakeFiles/sim.dir/construction.cc.o: \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4AffineTransform.icc \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VBooleanProcessor.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4BooleanSolid.icc \
- /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/RunAction.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4UserRunAction.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/globals.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VisAttributes.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/graphics_reps_defs.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Colour.hh \

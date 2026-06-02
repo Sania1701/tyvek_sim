@@ -3,7 +3,6 @@ sim: \
   /home/sanialewis/anaconda3/envs/geant4-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o \
   /home/sanialewis/anaconda3/envs/geant4-env/bin/../lib/gcc/x86_64-conda-linux-gnu/15.2.0/crtbeginS.o \
   CMakeFiles/sim.dir/sim.cc.o \
-  CMakeFiles/sim.dir/RunAction.cc.o \
   CMakeFiles/sim.dir/action.cc.o \
   CMakeFiles/sim.dir/construction.cc.o \
   CMakeFiles/sim.dir/generator.cc.o \
@@ -84,8 +83,6 @@ sim: \
 /home/sanialewis/anaconda3/envs/geant4-env/bin/../lib/gcc/x86_64-conda-linux-gnu/15.2.0/crtbeginS.o:
 
 CMakeFiles/sim.dir/sim.cc.o:
-
-CMakeFiles/sim.dir/RunAction.cc.o:
 
 CMakeFiles/sim.dir/action.cc.o:
 
