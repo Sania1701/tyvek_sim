@@ -1,0 +1,8 @@
+/gps/particle opticalphoton
+/gps/energy 4.136 eV
+/gps/pos/type Beam
+/gps/pos/shape Circle
+/gps/pos/radius 1.0 mm
+/gps/pos/centre 0 8.75 0 cm
+/gps/direction 0 -1 0
+

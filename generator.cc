@@ -22,8 +22,8 @@ MyPrimaryGenerator::~MyPrimaryGenerator()
 
 void MyPrimaryGenerator::GeneratePrimaries(G4Event *anEvent) 
 { 
-    std::ofstream file_stream;
-    file_stream.open ("output.txt");
+   // std::ofstream file_stream;
+   // file_stream.open ("output.txt");
     
     // Current working settings 
      
@@ -56,12 +56,12 @@ void MyPrimaryGenerator::GeneratePrimaries(G4Event *anEvent)
    // G4double energy = 1239.84/wavelength;
 
    // fParticleGun->SetParticleEnergy(energy*eV);
-   /* std::ostringstream stream; 
-    stream << energy; 
-    file_stream << stream.str() << "\n";
+    //std::ostringstream stream; 
+   // stream << energy; 
+  //  file_stream << stream.str() << "\n";
 
-    file_stream.close();
-*/
+   // file_stream.close();
+
    // G4cout << "Wavelength : "<< wavelength / nm << " nm" << G4endl;
     fParticleGun->SetParticleEnergy(3.0*eV); // single energy for now but will make a range later 
     

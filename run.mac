@@ -1,0 +1,8 @@
+/gun/momentumAmp 3 eV 
+/run/beamOn 10000
+/gun/momentumAmp 4 eV
+/run/beamOn 10000
+/gun/momentumAmp 2 eV
+/run/beamOn 10000
+
+

@@ -6,12 +6,11 @@
 /tracking/storeTrajectory 1
 /vis/scene/add/axes 0 7.75 0 100 mm
 /vis/scene/add/trajectories
+/vis/scene/add/scale 10 cm
+/vis/scene/add/eventID
 /tracking/storeTrajectory 1
-/vis/modeling/trajectories/create/drawByParticleID
-/vis/modeling/trajectories/drawByParticleID-0/default white   
-/vis/modeling/trajectories/drawByParticleID-0/set opticalphoton red
 /vis/modeling/trajectories/create/drawByParticleID
 /vis/scene/endOfEventAction accumulate
 /vis/viewer/set/autoRefresh true
-/run/beamOn 100
+/run/beamOn 10
 /vis/viewer/flush
