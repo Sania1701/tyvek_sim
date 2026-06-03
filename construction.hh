@@ -9,7 +9,10 @@
 #include "G4LogicalVolume.hh"
 #include "G4PVPlacement.hh" 
 #include "G4SubtractionSolid.hh"
-#include "RunAction.hh"
+#include "action.hh" 
+#include "generator.hh"
+//#include "runaction.hh"
+#include "detector.hh"
 
 class MyDetectorConstruction : public G4VUserDetectorConstruction
 { 
@@ -24,7 +27,7 @@ public:
     
 private: 
     G4LogicalVolume *logicDetector;
-   
+    virtual void ConstructSDandField(); 
    
 };
 

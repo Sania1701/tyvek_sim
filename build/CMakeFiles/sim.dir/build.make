@@ -86,24 +86,10 @@ CMakeFiles/sim.dir/sim.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sim.dir/sim.cc.s"
 	/home/sanialewis/anaconda3/envs/geant4-env/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/sim.cc -o CMakeFiles/sim.dir/sim.cc.s
 
-CMakeFiles/sim.dir/RunAction.cc.o: CMakeFiles/sim.dir/flags.make
-CMakeFiles/sim.dir/RunAction.cc.o: /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/RunAction.cc
-CMakeFiles/sim.dir/RunAction.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sanialewis/Documents/Tyvek/geant4-simulation/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sim.dir/RunAction.cc.o"
-	/home/sanialewis/anaconda3/envs/geant4-env/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/RunAction.cc.o -MF CMakeFiles/sim.dir/RunAction.cc.o.d -o CMakeFiles/sim.dir/RunAction.cc.o -c /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/RunAction.cc
-
-CMakeFiles/sim.dir/RunAction.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sim.dir/RunAction.cc.i"
-	/home/sanialewis/anaconda3/envs/geant4-env/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/RunAction.cc > CMakeFiles/sim.dir/RunAction.cc.i
-
-CMakeFiles/sim.dir/RunAction.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sim.dir/RunAction.cc.s"
-	/home/sanialewis/anaconda3/envs/geant4-env/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/RunAction.cc -o CMakeFiles/sim.dir/RunAction.cc.s
-
 CMakeFiles/sim.dir/action.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/action.cc.o: /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/action.cc
 CMakeFiles/sim.dir/action.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sanialewis/Documents/Tyvek/geant4-simulation/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sim.dir/action.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sanialewis/Documents/Tyvek/geant4-simulation/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sim.dir/action.cc.o"
 	/home/sanialewis/anaconda3/envs/geant4-env/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/action.cc.o -MF CMakeFiles/sim.dir/action.cc.o.d -o CMakeFiles/sim.dir/action.cc.o -c /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/action.cc
 
 CMakeFiles/sim.dir/action.cc.i: cmake_force
@@ -117,7 +103,7 @@ CMakeFiles/sim.dir/action.cc.s: cmake_force
 CMakeFiles/sim.dir/construction.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/construction.cc.o: /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/construction.cc
 CMakeFiles/sim.dir/construction.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sanialewis/Documents/Tyvek/geant4-simulation/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sim.dir/construction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sanialewis/Documents/Tyvek/geant4-simulation/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sim.dir/construction.cc.o"
 	/home/sanialewis/anaconda3/envs/geant4-env/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/construction.cc.o -MF CMakeFiles/sim.dir/construction.cc.o.d -o CMakeFiles/sim.dir/construction.cc.o -c /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/construction.cc
 
 CMakeFiles/sim.dir/construction.cc.i: cmake_force
@@ -127,6 +113,20 @@ CMakeFiles/sim.dir/construction.cc.i: cmake_force
 CMakeFiles/sim.dir/construction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sim.dir/construction.cc.s"
 	/home/sanialewis/anaconda3/envs/geant4-env/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/construction.cc -o CMakeFiles/sim.dir/construction.cc.s
+
+CMakeFiles/sim.dir/detector.cc.o: CMakeFiles/sim.dir/flags.make
+CMakeFiles/sim.dir/detector.cc.o: /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/detector.cc
+CMakeFiles/sim.dir/detector.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sanialewis/Documents/Tyvek/geant4-simulation/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sim.dir/detector.cc.o"
+	/home/sanialewis/anaconda3/envs/geant4-env/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/detector.cc.o -MF CMakeFiles/sim.dir/detector.cc.o.d -o CMakeFiles/sim.dir/detector.cc.o -c /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/detector.cc
+
+CMakeFiles/sim.dir/detector.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sim.dir/detector.cc.i"
+	/home/sanialewis/anaconda3/envs/geant4-env/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/detector.cc > CMakeFiles/sim.dir/detector.cc.i
+
+CMakeFiles/sim.dir/detector.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sim.dir/detector.cc.s"
+	/home/sanialewis/anaconda3/envs/geant4-env/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/detector.cc -o CMakeFiles/sim.dir/detector.cc.s
 
 CMakeFiles/sim.dir/generator.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/generator.cc.o: /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/generator.cc
@@ -156,24 +156,40 @@ CMakeFiles/sim.dir/physics.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sim.dir/physics.cc.s"
 	/home/sanialewis/anaconda3/envs/geant4-env/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/physics.cc -o CMakeFiles/sim.dir/physics.cc.s
 
+CMakeFiles/sim.dir/run.cc.o: CMakeFiles/sim.dir/flags.make
+CMakeFiles/sim.dir/run.cc.o: /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/run.cc
+CMakeFiles/sim.dir/run.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sanialewis/Documents/Tyvek/geant4-simulation/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/sim.dir/run.cc.o"
+	/home/sanialewis/anaconda3/envs/geant4-env/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/run.cc.o -MF CMakeFiles/sim.dir/run.cc.o.d -o CMakeFiles/sim.dir/run.cc.o -c /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/run.cc
+
+CMakeFiles/sim.dir/run.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sim.dir/run.cc.i"
+	/home/sanialewis/anaconda3/envs/geant4-env/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/run.cc > CMakeFiles/sim.dir/run.cc.i
+
+CMakeFiles/sim.dir/run.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sim.dir/run.cc.s"
+	/home/sanialewis/anaconda3/envs/geant4-env/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/run.cc -o CMakeFiles/sim.dir/run.cc.s
+
 # Object files for target sim
 sim_OBJECTS = \
 "CMakeFiles/sim.dir/sim.cc.o" \
-"CMakeFiles/sim.dir/RunAction.cc.o" \
 "CMakeFiles/sim.dir/action.cc.o" \
 "CMakeFiles/sim.dir/construction.cc.o" \
+"CMakeFiles/sim.dir/detector.cc.o" \
 "CMakeFiles/sim.dir/generator.cc.o" \
-"CMakeFiles/sim.dir/physics.cc.o"
+"CMakeFiles/sim.dir/physics.cc.o" \
+"CMakeFiles/sim.dir/run.cc.o"
 
 # External object files for target sim
 sim_EXTERNAL_OBJECTS =
 
 sim: CMakeFiles/sim.dir/sim.cc.o
-sim: CMakeFiles/sim.dir/RunAction.cc.o
 sim: CMakeFiles/sim.dir/action.cc.o
 sim: CMakeFiles/sim.dir/construction.cc.o
+sim: CMakeFiles/sim.dir/detector.cc.o
 sim: CMakeFiles/sim.dir/generator.cc.o
 sim: CMakeFiles/sim.dir/physics.cc.o
+sim: CMakeFiles/sim.dir/run.cc.o
 sim: CMakeFiles/sim.dir/build.make
 sim: CMakeFiles/sim.dir/compiler_depend.ts
 sim: /home/sanialewis/anaconda3/envs/geant4-env/lib/libG4Tree.so
@@ -219,7 +235,7 @@ sim: /home/sanialewis/anaconda3/envs/geant4-env/lib/libG4global.so
 sim: /home/sanialewis/anaconda3/envs/geant4-env/lib/libG4ptl.so.3.0.0
 sim: /home/sanialewis/anaconda3/envs/geant4-env/lib/libCLHEP-2.4.7.1.so
 sim: CMakeFiles/sim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/sanialewis/Documents/Tyvek/geant4-simulation/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable sim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/sanialewis/Documents/Tyvek/geant4-simulation/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable sim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sim.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

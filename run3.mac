@@ -1,0 +1,5 @@
+/run/initialize
+/gun/energy 2 eV
+/tracking/verbose 1
+/run/beamOn 10
+

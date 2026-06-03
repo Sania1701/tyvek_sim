@@ -5,8 +5,10 @@ sim: \
   CMakeFiles/sim.dir/sim.cc.o \
   CMakeFiles/sim.dir/action.cc.o \
   CMakeFiles/sim.dir/construction.cc.o \
+  CMakeFiles/sim.dir/detector.cc.o \
   CMakeFiles/sim.dir/generator.cc.o \
   CMakeFiles/sim.dir/physics.cc.o \
+  CMakeFiles/sim.dir/run.cc.o \
   /home/sanialewis/anaconda3/envs/geant4-env/lib/libG4Tree.so \
   /home/sanialewis/anaconda3/envs/geant4-env/lib/libG4FR.so \
   /home/sanialewis/anaconda3/envs/geant4-env/lib/libG4GMocren.so \
@@ -88,9 +90,13 @@ CMakeFiles/sim.dir/action.cc.o:
 
 CMakeFiles/sim.dir/construction.cc.o:
 
+CMakeFiles/sim.dir/detector.cc.o:
+
 CMakeFiles/sim.dir/generator.cc.o:
 
 CMakeFiles/sim.dir/physics.cc.o:
+
+CMakeFiles/sim.dir/run.cc.o:
 
 /home/sanialewis/anaconda3/envs/geant4-env/lib/libG4Tree.so:
 

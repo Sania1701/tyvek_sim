@@ -195,6 +195,11 @@ CMakeFiles/sim.dir/sim.cc.o: \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/ostream.tcc \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/istream \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/istream.tcc \
+ /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/fstream \
+ /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/codecvt.h \
+ /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/x86_64-conda-linux-gnu/bits/basic_file.h \
+ /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/x86_64-conda-linux-gnu/bits/c++io.h \
+ /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/fstream.tcc \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4RunManager.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Event.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/set \
@@ -276,7 +281,6 @@ CMakeFiles/sim.dir/sim.cc.o: \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/x86_64-conda-linux-gnu/bits/time_members.h \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/x86_64-conda-linux-gnu/bits/messages_members.h \
  /home/sanialewis/anaconda3/envs/geant4-env/x86_64-conda-linux-gnu/sysroot/usr/include/libintl.h \
- /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/codecvt.h \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/locale_facets_nonio.tcc \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/locale_conv.h \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/quoted_string.h \
@@ -427,10 +431,6 @@ CMakeFiles/sim.dir/sim.cc.o: \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4MaterialPropertyVector.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4PhysicsFreeVector.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4PhysicsVector.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/fstream \
- /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/x86_64-conda-linux-gnu/bits/basic_file.h \
- /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/x86_64-conda-linux-gnu/bits/c++io.h \
- /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/fstream.tcc \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4PhysicsVectorType.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4PhysicsVector.icc \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4MaterialTable.hh \
@@ -731,6 +731,82 @@ CMakeFiles/sim.dir/sim.cc.o: \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4DisplacedSolid.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VBooleanProcessor.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4BooleanSolid.icc \
+ /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/action.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VUserActionInitialization.hh \
+ /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/generator.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ParticleGun.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VPrimaryGenerator.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ParticleTable.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4OpticalPhoton.hh \
+ /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/run.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4UserRunAction.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4AnalysisManager.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4GenericAnalysisManager.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ToolsAnalysisManager.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VAnalysisManager.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4AnalysisManagerState.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4AnalysisVerbose.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4AnalysisUtilities.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VTBaseHnManager.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4HnInformation.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4BinScheme.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Fcn.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VAnalysisManager.icc \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4HnManager.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4BaseAnalysisManager.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4NtupleBookingManager.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tools/ntuple_booking \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tools/cids \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tools/cid \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tools/typedefs \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tools/forit \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4NtupleBookingManager.icc \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VNtupleManager.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VFileManager.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4BaseFileManager.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VTHnFileManager.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4TH1ToolsManager.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4THnToolsManager.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4THnManager.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4THnManager.icc \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4THnMessenger.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4THnToolsManager.icc \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4THnMessenger.icc \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Tokenizer.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4TH2ToolsManager.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4TH3ToolsManager.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4TP1ToolsManager.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4TP2ToolsManager.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tools/histo/h1d \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tools/histo/h1 \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tools/histo/b1 \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tools/histo/base_histo \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tools/histo/histo_data \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tools/histo/axes \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tools/histo/axis \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tools/eqT \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tools/histo/h2d \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tools/histo/h2 \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tools/histo/b2 \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tools/histo/h3d \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tools/histo/h3 \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tools/histo/b3 \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tools/histo/p1d \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tools/histo/p1 \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tools/histo/profile_data \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tools/histo/p2d \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tools/histo/p2 \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ToolsAnalysisManager.icc \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4GenericAnalysisManager.icc \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4GenericFileManager.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4GenericFileManager.icc \
+ /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/detector.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VSensitiveDetector.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4CollectionNameVector.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VReadOutGeometry.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4SensitiveVolumeList.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VSDFilter.hh \
  /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/physics.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VModularPhysicsList.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VPhysicsConstructor.hh \
@@ -747,15 +823,4 @@ CMakeFiles/sim.dir/sim.cc.o: \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4MCCIndexConversionTable.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4EmStandardPhysics.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4OpticalPhysics.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4OpticalParameters.hh \
- /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/action.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VUserActionInitialization.hh \
- /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/generator.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ParticleGun.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VPrimaryGenerator.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ParticleTable.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4OpticalPhoton.hh \
- /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/RunAction.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4UserRunAction.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/globals.hh
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4OpticalParameters.hh

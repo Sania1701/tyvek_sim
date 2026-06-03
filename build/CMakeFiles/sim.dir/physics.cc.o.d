@@ -356,7 +356,4 @@ CMakeFiles/sim.dir/physics.cc.o: \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ThreeVector.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/CLHEP/Vector/ThreeVector.h \
  /home/sanialewis/anaconda3/envs/geant4-env/include/CLHEP/Vector/defs.h \
- /home/sanialewis/anaconda3/envs/geant4-env/include/CLHEP/Vector/ThreeVector.icc \
- /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/RunAction.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4UserRunAction.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/globals.hh
+ /home/sanialewis/anaconda3/envs/geant4-env/include/CLHEP/Vector/ThreeVector.icc

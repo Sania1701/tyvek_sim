@@ -142,30 +142,6 @@ Simulation/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simulation.dir/build.make CMakeFiles/Simulation.dir/build
 .PHONY : Simulation/fast
 
-RunAction.o: RunAction.cc.o
-.PHONY : RunAction.o
-
-# target to build an object file
-RunAction.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/RunAction.cc.o
-.PHONY : RunAction.cc.o
-
-RunAction.i: RunAction.cc.i
-.PHONY : RunAction.i
-
-# target to preprocess a source file
-RunAction.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/RunAction.cc.i
-.PHONY : RunAction.cc.i
-
-RunAction.s: RunAction.cc.s
-.PHONY : RunAction.s
-
-# target to generate assembly for a file
-RunAction.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/RunAction.cc.s
-.PHONY : RunAction.cc.s
-
 action.o: action.cc.o
 .PHONY : action.o
 
@@ -213,6 +189,30 @@ construction.s: construction.cc.s
 construction.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/construction.cc.s
 .PHONY : construction.cc.s
+
+detector.o: detector.cc.o
+.PHONY : detector.o
+
+# target to build an object file
+detector.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/detector.cc.o
+.PHONY : detector.cc.o
+
+detector.i: detector.cc.i
+.PHONY : detector.i
+
+# target to preprocess a source file
+detector.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/detector.cc.i
+.PHONY : detector.cc.i
+
+detector.s: detector.cc.s
+.PHONY : detector.s
+
+# target to generate assembly for a file
+detector.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/detector.cc.s
+.PHONY : detector.cc.s
 
 generator.o: generator.cc.o
 .PHONY : generator.o
@@ -262,6 +262,30 @@ physics.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/physics.cc.s
 .PHONY : physics.cc.s
 
+run.o: run.cc.o
+.PHONY : run.o
+
+# target to build an object file
+run.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/run.cc.o
+.PHONY : run.cc.o
+
+run.i: run.cc.i
+.PHONY : run.i
+
+# target to preprocess a source file
+run.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/run.cc.i
+.PHONY : run.cc.i
+
+run.s: run.cc.s
+.PHONY : run.s
+
+# target to generate assembly for a file
+run.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/run.cc.s
+.PHONY : run.cc.s
+
 sim.o: sim.cc.o
 .PHONY : sim.o
 
@@ -296,21 +320,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Simulation"
 	@echo "... sim"
-	@echo "... RunAction.o"
-	@echo "... RunAction.i"
-	@echo "... RunAction.s"
 	@echo "... action.o"
 	@echo "... action.i"
 	@echo "... action.s"
 	@echo "... construction.o"
 	@echo "... construction.i"
 	@echo "... construction.s"
+	@echo "... detector.o"
+	@echo "... detector.i"
+	@echo "... detector.s"
 	@echo "... generator.o"
 	@echo "... generator.i"
 	@echo "... generator.s"
 	@echo "... physics.o"
 	@echo "... physics.i"
 	@echo "... physics.s"
+	@echo "... run.o"
+	@echo "... run.i"
+	@echo "... run.s"
 	@echo "... sim.o"
 	@echo "... sim.i"
 	@echo "... sim.s"
