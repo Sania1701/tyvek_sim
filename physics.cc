@@ -1,6 +1,5 @@
 #include "physics.hh" 
 #include "G4OpticalPhysics.hh"
-#include "RunAction.hh"
 
 MyPhysicsList::MyPhysicsList()
 {

@@ -3,7 +3,7 @@
 #include "G4Colour.hh"
 #include "G4EllipticalTube.hh"
 #include <algorithm>
-#include "RunAction.hh"
+
 MyDetectorConstruction::MyDetectorConstruction()
 {}
 
@@ -16,10 +16,10 @@ void MyDetectorConstruction::getEnergy(const G4double input[], const G4double fa
         
         G4double corr_wavelength = input[i]*0.001;	
         output[i] = factor/corr_wavelength;
-       // std::cout<< output[i]<< std::endl;
+ 
     }
     std::sort(output, output+N);
-    //std::cout<< output[1]<< std::endl;
+
 }
 
 G4VPhysicalVolume *MyDetectorConstruction::Construct()
@@ -169,28 +169,38 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     
         
     // Detector 
-    /*
-    G4Box *solidDetector = new G4Box("solidDetector", 0.005*m, 0.005*m, 0.01*m);
+  
+    G4Box *solidDetector = new G4Box("solidDetector", 0.5*mm, 0.5*mm, 0.5*mm);
     
     logicDetector = new G4LogicalVolume(solidDetector, worldMat, "logicDetector");
-    */
     
     
     
-    /*
-     // From tutorial 
-    for(G4int i =0; i < 100; i++)
+    
+    
+    for (G4int i = 0; i < 12; i++) 
     {
-        for(G4int j = 0; j < 100; j++)
+        for (G4int j = 0; j < 20; j++)
         {
-            G4VPhysicalVolume *physDetector = new G4PVPlacement(0,G4ThreeVector(-0.5*m+(i+0.5)*m/100, -0.5*m+(j+0.5)*m/100, 0.49*m), logicDetector, "physDetector", logicWorld, false, i+j*100, true);
+            G4double x = (-5.5 + i) * mm;
+            G4double y = 7.75 * mm;   
+            G4double z = (-9.5 + j) * mm;
+            
+            new G4PVPlacement(
+                nullptr,
+                G4ThreeVector(x, y, z),
+                logicDetector,
+                "physDetector",
+                logicWorld,
+                false,
+                i + j * 12,
+                true
+            );
         }
     }
-    */
     
-    
-    
-    
+  
+   
     
     
     
@@ -199,4 +209,20 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     return physWorld; //Always return highest mother volume
     
 }
+
+
+void MyDetectorConstruction::ConstructSDandField()
+{
+    MySensitiveDetector *sensDet = new MySensitiveDetector("SensitiveDetector");
+   
+    logicDetector->SetSensitiveDetector(sensDet); 
+    
+    
+}
+
+
+
+
+
+
 

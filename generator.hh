@@ -7,21 +7,24 @@
 #include "G4SystemOfUnits.hh"
 #include "G4ParticleTable.hh"
 #include "G4OpticalPhoton.hh"
-#include "RunAction.hh"
-#define G4UniformRand() CLHEP::HepRandom::getTheEngine()->flat()
+//#include "runaction.hh"
+
+
+
 
 class MyPrimaryGenerator : public G4VUserPrimaryGeneratorAction
 {
 public: 
-    MyPrimaryGenerator(RunAction* runAction);
+
+     //MyPrimaryGenerator(MyRunAction* runAction);
+     MyPrimaryGenerator();
     ~MyPrimaryGenerator();
     
     virtual void GeneratePrimaries(G4Event*);
     
 private: 
     G4ParticleGun *fParticleGun;
-    RunAction* fRunAction;
- 
+  //  MyRunAction* fRunAction;
 };
 
 #endif 
