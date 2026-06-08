@@ -13,6 +13,9 @@
 #include "generator.hh"
 //#include "runaction.hh"
 #include "detector.hh"
+#include "G4GenericMessenger.hh" 
+
+
 
 class MyDetectorConstruction : public G4VUserDetectorConstruction
 { 
@@ -28,7 +31,7 @@ public:
 private: 
     G4LogicalVolume *logicDetector;
     virtual void ConstructSDandField(); 
-   
+    G4GenericMessenger* fMessenger;   
 };
 
 

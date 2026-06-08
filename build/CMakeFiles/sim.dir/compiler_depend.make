@@ -46,6 +46,7 @@ CMakeFiles/sim.dir/action.cc.o: /home/sanialewis/Documents/Tyvek/geant4-simulati
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ParticleTableIterator.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4PrimaryParticle.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4PrimaryVertex.hh \
+  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Run.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4String.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4String.icc \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4SystemOfUnits.hh \
@@ -585,6 +586,10 @@ CMakeFiles/sim.dir/construction.cc.o: /home/sanialewis/Documents/Tyvek/geant4-si
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Isotope.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4IsotopeVector.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Log.hh \
+  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalSkinSurface.hh \
+  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalSkinSurface.icc \
+  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalSurface.hh \
+  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalSurface.icc \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalVolume.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalVolume.icc \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LorentzVector.hh \
@@ -613,6 +618,7 @@ CMakeFiles/sim.dir/construction.cc.o: /home/sanialewis/Documents/Tyvek/geant4-si
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4NtupleBookingManager.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4NtupleBookingManager.icc \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4OpticalPhoton.hh \
+  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4OpticalSurface.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4OrderedTable.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4PDefManager.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4PVPlacement.hh \
@@ -627,6 +633,8 @@ CMakeFiles/sim.dir/construction.cc.o: /home/sanialewis/Documents/Tyvek/geant4-si
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ParticleTable.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ParticleTable.icc \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ParticleTableIterator.hh \
+  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Physics2DVector.hh \
+  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Physics2DVector.icc \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4PhysicsFreeVector.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4PhysicsModelCatalog.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4PhysicsTable.hh \
@@ -652,6 +660,7 @@ CMakeFiles/sim.dir/construction.cc.o: /home/sanialewis/Documents/Tyvek/geant4-si
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ReplicaNavigation.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ReplicaNavigation.icc \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4RotationMatrix.hh \
+  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Run.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4RunManager.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4RunManagerKernel.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4SandiaTable.hh \
@@ -677,6 +686,7 @@ CMakeFiles/sim.dir/construction.cc.o: /home/sanialewis/Documents/Tyvek/geant4-si
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4SubEvent.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4SubEventTrackStack.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4SubtractionSolid.hh \
+  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4SurfaceProperty.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4SystemOfUnits.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4TH1ToolsManager.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4TH2ToolsManager.hh \
@@ -1312,6 +1322,7 @@ CMakeFiles/sim.dir/detector.cc.o: /home/sanialewis/Documents/Tyvek/geant4-simula
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ReplicaNavigation.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ReplicaNavigation.icc \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4RotationMatrix.hh \
+  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Run.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4RunManager.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4RunManagerKernel.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4SandiaTable.hh \
@@ -2554,6 +2565,7 @@ CMakeFiles/sim.dir/run.cc.o: /home/sanialewis/Documents/Tyvek/geant4-simulation/
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4HnManager.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4NtupleBookingManager.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4NtupleBookingManager.icc \
+  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Run.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4String.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4String.icc \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4TH1ToolsManager.hh \
@@ -3205,6 +3217,7 @@ CMakeFiles/sim.dir/sim.cc.o: /home/sanialewis/Documents/Tyvek/geant4-simulation/
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ReplicaNavigation.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ReplicaNavigation.icc \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4RotationMatrix.hh \
+  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Run.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4RunManager.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4RunManagerKernel.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4SandiaTable.hh \
@@ -4175,9 +4188,13 @@ CMakeFiles/sim.dir/action.cc.o:
 
 /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4PhysicsTable.hh:
 
+/home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Physics2DVector.hh:
+
 /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ProcessVector.icc:
 
 /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ParticleChange.icc:
+
+/home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4OpticalSurface.hh:
 
 /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4NormalNavigation.icc:
 
@@ -4213,6 +4230,12 @@ CMakeFiles/sim.dir/action.cc.o:
 
 /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalVolume.icc:
 
+/home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalSurface.hh:
+
+/home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalSkinSurface.icc:
+
+/home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalSkinSurface.hh:
+
 /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ModelingParameters.icc:
 
 /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Log.hh:
@@ -4238,6 +4261,8 @@ CMakeFiles/sim.dir/action.cc.o:
 /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4GeomConfig.hh:
 
 /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4GPILSelection.hh:
+
+/home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ForceCondition.hh:
 
 /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/memory:
 
@@ -4401,8 +4426,6 @@ CMakeFiles/sim.dir/action.cc.o:
 
 /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/std_function.h:
 
-/home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ForceCondition.hh:
-
 /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/shared_ptr.h:
 
 /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4AutoLock.hh:
@@ -4438,6 +4461,8 @@ CMakeFiles/sim.dir/action.cc.o:
 /home/sanialewis/anaconda3/envs/geant4-env/x86_64-conda-linux-gnu/sysroot/usr/include/locale.h:
 
 /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4UImessenger.hh:
+
+/home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalSurface.icc:
 
 /home/sanialewis/anaconda3/envs/geant4-env/x86_64-conda-linux-gnu/sysroot/usr/include/alloca.h:
 
@@ -4564,6 +4589,8 @@ CMakeFiles/sim.dir/physics.cc.o:
 /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/move.h:
 
 /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4TH1ToolsManager.hh:
+
+/home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Run.hh:
 
 /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/stl_set.h:
 
@@ -4839,6 +4866,8 @@ CMakeFiles/sim.dir/generator.cc.o:
 
 /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tools/typedefs:
 
+/home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4SurfaceProperty.hh:
+
 /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/unique_lock.h:
 
 /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VFileManager.hh:
@@ -4973,6 +5002,10 @@ CMakeFiles/sim.dir/generator.cc.o:
 
 /home/sanialewis/anaconda3/envs/geant4-env/x86_64-conda-linux-gnu/sysroot/usr/include/bits/flt-eval-method.h:
 
+/home/sanialewis/anaconda3/envs/geant4-env/lib/libG4processes.so:
+
+/home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tls.hh:
+
 /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VPrimaryGenerator.hh:
 
 /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4SystemOfUnits.hh:
@@ -4981,15 +5014,13 @@ CMakeFiles/sim.dir/generator.cc.o:
 
 /home/sanialewis/anaconda3/envs/geant4-env/include/CLHEP/Random/DRand48Engine.h:
 
-/home/sanialewis/anaconda3/envs/geant4-env/lib/libG4processes.so:
-
-/home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tls.hh:
-
 /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VModularPhysicsList.hh:
 
 /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalVolume.hh:
 
 /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bit:
+
+/home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Physics2DVector.icc:
 
 /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4GenericFileManager.icc:
 

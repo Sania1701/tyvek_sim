@@ -438,6 +438,7 @@ CMakeFiles/sim.dir/construction.cc.o: \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4OpticalPhoton.hh \
  /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/run.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4UserRunAction.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Run.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4AnalysisManager.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4GenericAnalysisManager.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ToolsAnalysisManager.hh \
@@ -683,6 +684,15 @@ CMakeFiles/sim.dir/construction.cc.o: \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/list \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/stl_list.h \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/list.tcc \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4GenericMessenger.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4AnyMethod.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/functional \
+ /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/unordered_map \
+ /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/unordered_map.h \
+ /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/hashtable.h \
+ /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/hashtable_policy.h \
+ /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/enable_special_members.h \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4AnyType.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VisAttributes.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/graphics_reps_defs.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Colour.hh \
@@ -690,4 +700,12 @@ CMakeFiles/sim.dir/construction.cc.o: \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VisAttributes.icc \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Colour.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4EllipticalTube.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4EllipticalTube.icc
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4EllipticalTube.icc \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4OpticalSurface.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Physics2DVector.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Physics2DVector.icc \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4SurfaceProperty.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalSkinSurface.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalSurface.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalSurface.icc \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalSkinSurface.icc

@@ -227,12 +227,7 @@ CMakeFiles/sim.dir/run.cc.o: \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/istream.tcc \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/sstream.tcc \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/tls.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4AnalysisManager.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4GenericAnalysisManager.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ToolsAnalysisManager.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VAnalysisManager.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4AnalysisManagerState.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4AnalysisVerbose.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Run.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/globals.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ios.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/iostream \
@@ -293,6 +288,17 @@ CMakeFiles/sim.dir/run.cc.o: \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/parse_numbers.h \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/std_mutex.h \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/unique_lock.h \
+ /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/vector \
+ /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/stl_uninitialized.h \
+ /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/stl_vector.h \
+ /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/stl_bvector.h \
+ /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/vector.tcc \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4AnalysisManager.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4GenericAnalysisManager.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ToolsAnalysisManager.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VAnalysisManager.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4AnalysisManagerState.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4AnalysisVerbose.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/array \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/compare \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Threading.hh \
@@ -312,11 +318,6 @@ CMakeFiles/sim.dir/run.cc.o: \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/std_thread.h \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/thread \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/this_thread_sleep.h \
- /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/vector \
- /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/stl_uninitialized.h \
- /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/stl_vector.h \
- /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/stl_bvector.h \
- /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/vector.tcc \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4AnalysisUtilities.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/memory \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/stl_raw_storage_iter.h \

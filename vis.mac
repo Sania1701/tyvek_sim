@@ -7,8 +7,9 @@
 /vis/scene/add/axes 1 1 1 10 cm
 /vis/scene/add/trajectories
 /tracking/storeTrajectory 1
+/process/optical/verbose 2
 /vis/modeling/trajectories/create/drawByParticleID
 /vis/scene/endOfEventAction accumulate
 /vis/viewer/set/autoRefresh true
-/run/beamOn 100
+/run/beamOn 10
 
