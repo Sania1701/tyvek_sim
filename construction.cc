@@ -109,9 +109,9 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
    
     
     // Mother volume info -----------------------------------------------------------------------
-    G4Box *solidWorld = new G4Box("solidWorld", 0.5*m, 0.5*m,0.5*m); // takes in arguments of half length, default unit mm, so nee *m to make it in metres instead 
+    solidWorld = new G4Box("solidWorld", 0.5*m, 0.5*m,0.5*m); // takes in arguments of half length, default unit mm, so nee *m to make it in metres instead 
     
-    G4LogicalVolume *logicWorld = new G4LogicalVolume(solidWorld, worldMat, "logicWorld");
+    logicWorld = new G4LogicalVolume(solidWorld, worldMat, "logicWorld");
     
     G4VPhysicalVolume *physWorld = new G4PVPlacement(0, G4ThreeVector(0.,0.,0.), logicWorld, "physWorld",0, false, 0, true);
     
@@ -142,15 +142,15 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     
     // Water geometry 
     
-    G4Box* solidWater = new G4Box("solidWater", waterX/2.0, waterY/2.0, waterZ/2.0);
+    solidWater = new G4Box("solidWater", waterX/2.0, waterY/2.0, waterZ/2.0);
     
-    G4LogicalVolume* logicWater = new G4LogicalVolume(solidWater,water, "logicWater"); 
+    logicWater = new G4LogicalVolume(solidWater,water, "logicWater"); 
     
     // Quartz outer 
     
-    G4Box *solidOuterCuv = new G4Box("solidOuterCuv", outerCuvX/2.0, outerCuvY/2.0, outerCuvZ/2.0);
+    solidOuterCuv = new G4Box("solidOuterCuv", outerCuvX/2.0, outerCuvY/2.0, outerCuvZ/2.0);
     
-    G4LogicalVolume* logicOuterCuv = new G4LogicalVolume(solidOuterCuv, quartz, "logicOuterCuv");
+    logicOuterCuv = new G4LogicalVolume(solidOuterCuv, quartz, "logicOuterCuv");
     
     // Quartz inner 
     
@@ -196,18 +196,18 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     G4double sampleZ = waterZ - 2.*safety;
     
         
-    G4Box* solidPlate = new G4Box("solidPlate", plateX/2.0, plateY/2.0, plateZ/2.0);
+    solidPlate = new G4Box("solidPlate", plateX/2.0, plateY/2.0, plateZ/2.0);
     
     // Rotation matrix to rotate the ellipse to extrude in the right direction. 
     
     auto rot = new G4RotationMatrix();
     rot->rotateX(90*deg);
     
-    auto solidOp = new G4Box("solidOp", opX/2.0, opY/2.0, opZ/2.0);
+    solidOp = new G4Box("solidOp", opX/2.0, opY/2.0, opZ/2.0);
     
     G4SubtractionSolid* solidAperture = new G4SubtractionSolid("solidAperture", solidPlate, solidOp, rot, G4ThreeVector(0.,0.,0.));
     
-    G4LogicalVolume *logicAperture = new G4LogicalVolume(solidAperture, steel, "logicAperture");
+    logicAperture = new G4LogicalVolume(solidAperture, steel, "logicAperture");
     
     G4VPhysicalVolume* physAperture = new G4PVPlacement(nullptr, G4ThreeVector(0.,6.75,0.), logicAperture, "physAperture", logicWorld, false, 0, true);
     
@@ -215,9 +215,9 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     
     //Tyvek sample 
     
-    G4Box* solidSample = new G4Box("solidSample", sampleX/2.0, sampleY/2.0, sampleZ/2.0);
+    solidSample = new G4Box("solidSample", sampleX/2.0, sampleY/2.0, sampleZ/2.0);
     
-    G4LogicalVolume *logicSample = new G4LogicalVolume(solidSample, spectralonMaterial, "logicSample");
+    logicSample = new G4LogicalVolume(solidSample, spectralonMaterial, "logicSample");
     
     G4VPhysicalVolume* physSample = new G4PVPlacement(nullptr, G4ThreeVector(0.,0.,0.), logicSample, "physSample", logicWater,false,0,true);
      G4LogicalSkinSurface* sampleSkinSurface = new G4LogicalSkinSurface("sampleSkinSurface", logicSample, spectralonSurface);
@@ -231,7 +231,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 //    G4Box *solidDetector = new G4Box("solidDetector", 0.5*mm, 0.5*mm, 0.5*mm);
   
   
-    G4Box *solidDetector = new G4Box("solidDetector", 12.5/2.0*mm, 0.5*mm, 20./2.0*mm);
+    solidDetector = new G4Box("solidDetector", 12.5/2.0*mm, 0.5*mm, 20./2.0*mm);
     
     logicDetector = new G4LogicalVolume(solidDetector, worldMat, "logicDetector");
     

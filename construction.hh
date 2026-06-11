@@ -36,8 +36,9 @@ private:
 
     G4GenericMessenger* fMessenger;   
     
-   
-
+    G4Box *solidWorld, *solidWater, *solidOuterCuv, *solidPlate, *solidSample, *solidOp, *solidDetector;
+    
+    G4LogicalVolume *logicWorld, *logicWater, *logicOuterCuv,  *logicAperture, *logicSample ;
 
 
 };
