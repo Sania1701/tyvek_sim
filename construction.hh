@@ -31,7 +31,15 @@ public:
 private: 
     G4LogicalVolume *logicDetector;
     virtual void ConstructSDandField(); 
+
+    G4String inCuvMat; 
+
     G4GenericMessenger* fMessenger;   
+    
+   
+
+
+
 };
 
 

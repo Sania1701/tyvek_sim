@@ -9,6 +9,10 @@
 MyDetectorConstruction::MyDetectorConstruction()
 {
 
+    fMessenger = new G4GenericMessenger(this, "/detector/", "Detector Construction");
+    fMessenger->DeclareProperty("inCuvMat", inCuvMat, "Material in cuvette");
+    
+    inCuvMat = "G4_WATER";
 
 }
 
@@ -32,7 +36,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     
     G4NistManager *nist = G4NistManager::Instance();
     G4Material *worldMat = nist->FindOrBuildMaterial("G4_AIR");
-    G4Material *water = nist->FindOrBuildMaterial("G4_WATER");
+    G4Material *water = nist->FindOrBuildMaterial(inCuvMat);
     G4Material *quartz = nist->FindOrBuildMaterial("G4_SILICON_DIOXIDE");
     G4Material *steel = nist->FindOrBuildMaterial("G4_STAINLESS-STEEL");
     G4Material* spectralonMaterial = nist->FindOrBuildMaterial("G4_TEFLON");
