@@ -3128,6 +3128,10 @@ CMakeFiles/sim.dir/sim.cc.o: /home/sanialewis/Documents/Tyvek/geant4-simulation/
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Isotope.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4IsotopeVector.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Log.hh \
+  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalSkinSurface.hh \
+  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalSkinSurface.icc \
+  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalSurface.hh \
+  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalSurface.icc \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalVolume.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalVolume.icc \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LorentzVector.hh \
@@ -3168,6 +3172,7 @@ CMakeFiles/sim.dir/sim.cc.o: /home/sanialewis/Documents/Tyvek/geant4-simulation/
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4OpticalParameters.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4OpticalPhoton.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4OpticalPhysics.hh \
+  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4OpticalSurface.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Orb.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Orb.icc \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4OrderedTable.hh \
@@ -3187,6 +3192,8 @@ CMakeFiles/sim.dir/sim.cc.o: /home/sanialewis/Documents/Tyvek/geant4-simulation/
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ParticleTable.icc \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4ParticleTableIterator.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4PhysicalVolumeModel.hh \
+  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Physics2DVector.hh \
+  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Physics2DVector.icc \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4PhysicsFreeVector.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4PhysicsListHelper.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4PhysicsListOrderingParameter.hh \
@@ -3263,6 +3270,7 @@ CMakeFiles/sim.dir/sim.cc.o: /home/sanialewis/Documents/Tyvek/geant4-simulation/
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4SubEventTrackStack.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4SubtractionSolid.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4SurfBits.hh \
+  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4SurfaceProperty.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4SystemOfUnits.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4TH1ToolsManager.hh \
   /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4TH2ToolsManager.hh \

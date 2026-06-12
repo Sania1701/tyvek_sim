@@ -811,6 +811,14 @@ CMakeFiles/sim.dir/sim.cc.o: \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4GenericMessenger.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4AnyMethod.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4AnyType.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4OpticalSurface.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Physics2DVector.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Physics2DVector.icc \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4SurfaceProperty.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalSkinSurface.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalSurface.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalSurface.icc \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalSkinSurface.icc \
  /home/sanialewis/Documents/Tyvek/geant4-simulation/sim/physics.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VModularPhysicsList.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VPhysicsConstructor.hh \

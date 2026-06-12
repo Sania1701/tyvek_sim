@@ -693,14 +693,6 @@ CMakeFiles/sim.dir/construction.cc.o: \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/hashtable_policy.h \
  /home/sanialewis/anaconda3/envs/geant4-env/lib/gcc/x86_64-conda-linux-gnu/15.2.0/include/c++/bits/enable_special_members.h \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4AnyType.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VisAttributes.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/graphics_reps_defs.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Colour.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Color.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VisAttributes.icc \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Colour.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4EllipticalTube.hh \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4EllipticalTube.icc \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4OpticalSurface.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Physics2DVector.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Physics2DVector.icc \
@@ -708,4 +700,12 @@ CMakeFiles/sim.dir/construction.cc.o: \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalSkinSurface.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalSurface.hh \
  /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalSurface.icc \
- /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalSkinSurface.icc
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4LogicalSkinSurface.icc \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VisAttributes.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/graphics_reps_defs.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Colour.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Color.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4VisAttributes.icc \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4Colour.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4EllipticalTube.hh \
+ /home/sanialewis/anaconda3/envs/geant4-env/include/Geant4/G4EllipticalTube.icc

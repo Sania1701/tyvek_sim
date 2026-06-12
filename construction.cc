@@ -11,8 +11,20 @@ MyDetectorConstruction::MyDetectorConstruction()
 
     fMessenger = new G4GenericMessenger(this, "/detector/", "Detector Construction");
     fMessenger->DeclareProperty("inCuvMat", inCuvMat, "Material in cuvette");
-    
     inCuvMat = "G4_WATER";
+
+    DefineMaterials();
+
+}
+
+void MyDetectorConstruction::DefineMaterials()
+{
+    G4NistManager *nist = G4NistManager::Instance();
+    worldMat = nist->FindOrBuildMaterial("G4_AIR");
+    water = nist->FindOrBuildMaterial(inCuvMat);
+    quartz = nist->FindOrBuildMaterial("G4_SILICON_DIOXIDE");
+    steel = nist->FindOrBuildMaterial("G4_STAINLESS-STEEL");
+    spectralonMaterial = nist->FindOrBuildMaterial("G4_TEFLON");
 
 }
 
@@ -33,14 +45,31 @@ void MyDetectorConstruction::getEnergy(const G4double input[], const G4double fa
 
 G4VPhysicalVolume *MyDetectorConstruction::Construct()
 {
-    
+    /*
     G4NistManager *nist = G4NistManager::Instance();
+    worldMat = nist->FindOrBuildMaterial("G4_AIR");
+    water = nist->FindOrBuildMaterial(inCuvMat);
+    quartz = nist->FindOrBuildMaterial("G4_SILICON_DIOXIDE");
+    steel = nist->FindOrBuildMaterial("G4_STAINLESS-STEEL");
+    spectralonMaterial = nist->FindOrBuildMaterial("G4_TEFLON");
+    */
+     /*
+     G4NistManager *nist = G4NistManager::Instance();
     G4Material *worldMat = nist->FindOrBuildMaterial("G4_AIR");
     G4Material *water = nist->FindOrBuildMaterial(inCuvMat);
     G4Material *quartz = nist->FindOrBuildMaterial("G4_SILICON_DIOXIDE");
     G4Material *steel = nist->FindOrBuildMaterial("G4_STAINLESS-STEEL");
     G4Material* spectralonMaterial = nist->FindOrBuildMaterial("G4_TEFLON");
-    
+     
+     
+     
+     
+     */
+
+
+
+
+
     // Refractive index info
     G4double factor = 1.239841939;
     G4double wavelength[24] = {260., 266., 274.87, 280., 300., 308., 320., 325., 337., 340., 360., 365.48, 380., 400., 404.65, 435.83, 441.6, 447.1, 486.13, 488., 514.5, 532.00, 546.07, 587.56};
@@ -50,7 +79,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     
     G4double rIndexAir[24];
     std::fill_n(rIndexAir,24, 1.);
-    std::cout<< "air ri: " << rIndexAir[4] <<std::endl;
+  
     G4double rIndexWater[24];
     std::fill_n(rIndexWater,24,1.33);
  
@@ -91,7 +120,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     
     // Sample surface 
     
-    G4OpticalSurface* spectralonSurface =
+    spectralonSurface =
     new G4OpticalSurface("Spectralon");
 
     spectralonSurface->SetType(dielectric_metal);
@@ -113,7 +142,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     
     logicWorld = new G4LogicalVolume(solidWorld, worldMat, "logicWorld");
     
-    G4VPhysicalVolume *physWorld = new G4PVPlacement(0, G4ThreeVector(0.,0.,0.), logicWorld, "physWorld",0, false, 0, true);
+    physWorld = new G4PVPlacement(0, G4ThreeVector(0.,0.,0.), logicWorld, "physWorld",0, false, 0, true);
     
     // ------------------------------------------------------------------------------------------
     
@@ -162,9 +191,9 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     
     // Placement 
     
-    G4VPhysicalVolume *physCuv = new G4PVPlacement(nullptr, G4ThreeVector(0.,0.,0.), logicOuterCuv, "physCuv",logicWorld, false, 0, true);
+    physCuv = new G4PVPlacement(nullptr, G4ThreeVector(0.,0.,0.), logicOuterCuv, "physCuv",logicWorld, false, 0, true);
     
-    G4VPhysicalVolume *physWater = new G4PVPlacement(nullptr, G4ThreeVector(0.,0.,0.), logicWater, "physWater", logicOuterCuv,false, 0, true);
+    physWater = new G4PVPlacement(nullptr, G4ThreeVector(0.,0.,0.), logicWater, "physWater", logicOuterCuv,false, 0, true);
     
     
     // Visualisation 
@@ -200,16 +229,16 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     
     // Rotation matrix to rotate the ellipse to extrude in the right direction. 
     
-    auto rot = new G4RotationMatrix();
+    rot = new G4RotationMatrix();
     rot->rotateX(90*deg);
     
     solidOp = new G4Box("solidOp", opX/2.0, opY/2.0, opZ/2.0);
     
-    G4SubtractionSolid* solidAperture = new G4SubtractionSolid("solidAperture", solidPlate, solidOp, rot, G4ThreeVector(0.,0.,0.));
+    solidAperture = new G4SubtractionSolid("solidAperture", solidPlate, solidOp, rot, G4ThreeVector(0.,0.,0.));
     
     logicAperture = new G4LogicalVolume(solidAperture, steel, "logicAperture");
     
-    G4VPhysicalVolume* physAperture = new G4PVPlacement(nullptr, G4ThreeVector(0.,6.75,0.), logicAperture, "physAperture", logicWorld, false, 0, true);
+    physAperture = new G4PVPlacement(nullptr, G4ThreeVector(0.,6.75,0.), logicAperture, "physAperture", logicWorld, false, 0, true);
     
     //G4LogicalVolume* logicPlate = new G4LogicalVolume(solidPlate, steel, "logicPlate");
     
@@ -219,8 +248,9 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     
     logicSample = new G4LogicalVolume(solidSample, spectralonMaterial, "logicSample");
     
-    G4VPhysicalVolume* physSample = new G4PVPlacement(nullptr, G4ThreeVector(0.,0.,0.), logicSample, "physSample", logicWater,false,0,true);
-     G4LogicalSkinSurface* sampleSkinSurface = new G4LogicalSkinSurface("sampleSkinSurface", logicSample, spectralonSurface);
+    physSample = new G4PVPlacement(nullptr, G4ThreeVector(0.,0.,0.), logicSample, "physSample", logicWater,false,0,true);
+    
+    sampleSkinSurface = new G4LogicalSkinSurface("sampleSkinSurface", logicSample, spectralonSurface);
        
     
     
@@ -235,7 +265,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     
     logicDetector = new G4LogicalVolume(solidDetector, worldMat, "logicDetector");
     
-     new G4PVPlacement(nullptr,
+    physDetector = new G4PVPlacement(nullptr,
                 G4ThreeVector(0.0, 7.75, 0.0),
                 logicDetector,
                 "physDetector",
