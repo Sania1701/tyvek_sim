@@ -13,6 +13,9 @@
 #include "generator.hh"
 //#include "runaction.hh"
 #include "detector.hh"
+#include "G4GenericMessenger.hh" 
+#include "G4OpticalSurface.hh"
+#include "G4LogicalSkinSurface.hh"
 
 class MyDetectorConstruction : public G4VUserDetectorConstruction
 { 
@@ -28,7 +31,32 @@ public:
 private: 
     G4LogicalVolume *logicDetector;
     virtual void ConstructSDandField(); 
-   
+
+    G4String inCuvMat; 
+
+    G4GenericMessenger* fMessenger;   
+    
+    G4Box *solidWorld, *solidWater, *solidOuterCuv, *solidPlate, *solidSample, *solidOp, *solidDetector;
+    
+    G4LogicalVolume *logicWorld, *logicWater, *logicOuterCuv,  *logicAperture, *logicSample ;
+
+    G4VPhysicalVolume *physWorld, *physCuv, *physWater, *physAperture, *physSample, *physDetector;
+
+    G4OpticalSurface* spectralonSurface;
+
+    G4SubtractionSolid* solidAperture;
+
+    G4LogicalSkinSurface* sampleSkinSurface;
+
+    G4RotationMatrix* rot;
+
+    void DefineMaterials();
+
+    G4Material *worldMat, *water, *quartz, *steel, *spectralonMaterial; 
+
+
+
+
 };
 
 

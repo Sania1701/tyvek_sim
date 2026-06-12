@@ -11,19 +11,8 @@
 //MyPrimaryGenerator::MyPrimaryGenerator(MyRunAction* runAction): fRunAction(runAction)
 MyPrimaryGenerator::MyPrimaryGenerator()
 {
-    G4int n_particle = 1;
+    
     fParticleGun = new G4ParticleGun(1); //one primary vertex per event is created
-}
-
-MyPrimaryGenerator::~MyPrimaryGenerator()
-{
-}
-
-
-void MyPrimaryGenerator::GeneratePrimaries(G4Event *anEvent) 
-{ 
-   // std::ofstream file_stream;
-   // file_stream.open ("output.txt");
     
     // Current working settings 
      
@@ -31,11 +20,9 @@ void MyPrimaryGenerator::GeneratePrimaries(G4Event *anEvent)
     G4String particleName;
     G4ParticleDefinition* particle = particleTable->FindParticle(particleName = "opticalphoton");
     
-    fParticleGun->SetParticleDefinition(particle);
+    fParticleGun->SetParticleDefinition(particle);    
     
-    
-    
-        // setting random polarization angle 
+    // setting random polarization angle 
     G4double angle = G4UniformRand() * CLHEP::twopi;
     
     G4ThreeVector kphoton = fParticleGun->GetParticleMomentumDirection();
@@ -49,6 +36,34 @@ void MyPrimaryGenerator::GeneratePrimaries(G4Event *anEvent)
     std::sin(angle) * perp;
     
     fParticleGun->SetParticlePolarization(polarization);
+    
+    fParticleGun->SetParticleEnergy(3.0*eV); // single energy for now but will make a range later 
+    
+    fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0.,-1.,0.));
+    
+    G4double width = 2.0*mm;
+    G4double height = 3.00*mm;
+    
+    G4double x = (G4UniformRand() - 0.5)*width;
+    G4double z = (G4UniformRand() - 0.5)*height;
+    
+    
+    fParticleGun->SetParticlePosition(G4ThreeVector(x,8.75*cm,z));
+    
+    
+}
+
+MyPrimaryGenerator::~MyPrimaryGenerator()
+{
+}
+
+
+void MyPrimaryGenerator::GeneratePrimaries(G4Event *anEvent) 
+{ 
+   // std::ofstream file_stream;
+   // file_stream.open ("output.txt");
+    
+
  //   G4double wavelength = fRunAction->GetScanWavelength();
 
     //G4double energy = (h_Planck*c_light)/wavelength;
@@ -63,18 +78,7 @@ void MyPrimaryGenerator::GeneratePrimaries(G4Event *anEvent)
    // file_stream.close();
 
    // G4cout << "Wavelength : "<< wavelength / nm << " nm" << G4endl;
-    fParticleGun->SetParticleEnergy(3.0*eV); // single energy for now but will make a range later 
-    
-    fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0.,-1.,0.));
-    
-    G4double width = 12.0*mm;
-    G4double height = 20.00*mm;
-    
-    G4double x = (G4UniformRand() - 0.5)*width;
-    G4double z = (G4UniformRand() - 0.5)*height;
-    
-    
-    fParticleGun->SetParticlePosition(G4ThreeVector(x,8.75*cm,z));
+
     fParticleGun->GeneratePrimaryVertex(anEvent); 
 
 
