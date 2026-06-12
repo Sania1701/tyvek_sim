@@ -1,7 +1,0 @@
-/run/initialize
-/gun/energy 2 eV
-/tracking/verbose 2
-#/process/optical/verbose 2
-/run/beamOn 3
-/gun/energy 2.5 eV
-/run/beamOn 3

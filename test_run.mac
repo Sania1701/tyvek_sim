@@ -1,0 +1,8 @@
+/control/echo true
+/detector/inCuvMat G4_WATER
+/run/reinitializeGeometry
+/run/beamOn 1
+
+/detector/inCuvMat G4_AIR
+/run/reinitializeGeometry
+/run/beamOn 1

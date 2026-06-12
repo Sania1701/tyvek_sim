@@ -1,0 +1,3 @@
+/detector/inCuvMat {mat}
+/run/reinitializeGeometry
+/run/beamOn 2

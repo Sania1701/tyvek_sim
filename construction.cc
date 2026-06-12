@@ -13,18 +13,85 @@ MyDetectorConstruction::MyDetectorConstruction()
     fMessenger->DeclareProperty("inCuvMat", inCuvMat, "Material in cuvette");
     inCuvMat = "G4_WATER";
 
-    DefineMaterials();
+   // DefineMaterials();
 
 }
 
 void MyDetectorConstruction::DefineMaterials()
 {
+
+    G4cout << "DefineMaterials() called" << G4endl;
+    G4cout << "inCuvMat = [" << inCuvMat << "]" << G4endl;
+    
     G4NistManager *nist = G4NistManager::Instance();
     worldMat = nist->FindOrBuildMaterial("G4_AIR");
     water = nist->FindOrBuildMaterial(inCuvMat);
     quartz = nist->FindOrBuildMaterial("G4_SILICON_DIOXIDE");
     steel = nist->FindOrBuildMaterial("G4_STAINLESS-STEEL");
     spectralonMaterial = nist->FindOrBuildMaterial("G4_TEFLON");
+    G4cout << "water->GetName() = " << water->GetName() << G4endl;
+
+        // Refractive index info
+    G4double factor = 1.239841939;
+    G4double wavelength[24] = {260., 266., 274.87, 280., 300., 308., 320., 325., 337., 340., 360., 365.48, 380., 400., 404.65, 435.83, 441.6, 447.1, 486.13, 488., 514.5, 532.00, 546.07, 587.56};
+    G4double rIndexQuartz[24] = {1.5024, 1.4997, 1.4961, 1.4942, 1.4878, 1.4856, 1.4827, 1.4816, 1.4792, 1.4787, 1.4753, 1.4745, 1.4725, 1.4701, 1.4696, 1.4667, 1.4662, 1.4658, 1.4631, 1.463, 1.4616, 1.4607, 1.4601, 1.4585};
+    G4double reflectivity[24];
+    std::fill_n(reflectivity, 24, 1.0);
+    
+    G4double rIndexAir[24];
+    std::fill_n(rIndexAir,24, 1.);
+  
+    G4double rIndexWater[24];
+    std::fill_n(rIndexWater,24,1.33);
+ 
+    G4double absLengthQuartz[24];
+    std::fill_n(absLengthQuartz, 24, 100.*m);
+    
+    G4double absLengthWater[24];
+    std::fill_n(absLengthWater, 24, 100.*m);
+    
+    G4double energy[24];
+    getEnergy(wavelength, factor, 24, energy);
+  //  std::cout<< "index 1 check: " << energy[0] << std::endl;
+    
+    G4double specularlobe[24];
+    std::fill_n(specularlobe, 24, 0.0);
+    
+    G4double specularspike[24];
+    std::fill_n(specularspike, 24, 0.0);
+    
+    G4double backscatter[24];
+    std::fill_n(backscatter,24, 0.0);
+
+    G4MaterialPropertiesTable *mptAir = new G4MaterialPropertiesTable();
+    mptAir->AddProperty("RINDEX", energy, rIndexAir,24);
+    worldMat->SetMaterialPropertiesTable(mptAir);
+    
+    G4MaterialPropertiesTable *mptQuartz = new G4MaterialPropertiesTable();
+    mptQuartz->AddProperty("RINDEX", energy, rIndexQuartz, 24);
+    mptQuartz->AddProperty("ABSLENGTH", energy, absLengthQuartz ,24);
+    quartz->SetMaterialPropertiesTable(mptQuartz);
+    
+    G4MaterialPropertiesTable *mptWater = new G4MaterialPropertiesTable();
+    mptWater->AddProperty("RINDEX", energy, rIndexWater, 24);
+    mptWater->AddProperty("ABSLENGTH", energy, absLengthWater, 24);
+    water->SetMaterialPropertiesTable(mptWater);
+    
+        
+    spectralonSurface =
+    new G4OpticalSurface("Spectralon");
+
+    spectralonSurface->SetType(dielectric_metal);
+    spectralonSurface->SetModel(unified);
+    spectralonSurface->SetFinish(ground);
+    G4MaterialPropertiesTable *mptSpec = new G4MaterialPropertiesTable();
+    mptSpec->AddProperty("REFLECTIVITY", energy, reflectivity,24);
+    mptSpec->AddProperty("SPECULARLOBECONSTANT", energy, specularlobe, 24);
+    mptSpec->AddProperty("SPECULARSPIKECONSTANT", energy, specularspike, 24);
+    mptSpec->AddProperty("BACKSCATTERCONSTANT", energy, backscatter, 24);
+    spectralonSurface->SetMaterialPropertiesTable(mptSpec);
+
+
 
 }
 
@@ -44,7 +111,13 @@ void MyDetectorConstruction::getEnergy(const G4double input[], const G4double fa
 }
 
 G4VPhysicalVolume *MyDetectorConstruction::Construct()
-{
+{ 
+    DefineMaterials();
+    
+    G4cout << "2water->GetName() = " << water->GetName() << G4endl;
+    
+
+    
     /*
     G4NistManager *nist = G4NistManager::Instance();
     worldMat = nist->FindOrBuildMaterial("G4_AIR");
@@ -64,7 +137,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
      
      
      
-     */
+
 
 
 
@@ -101,9 +174,9 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     
     G4double backscatter[24];
     std::fill_n(backscatter,24, 0.0);
-       
+    */
     
-    
+    /*
     G4MaterialPropertiesTable *mptAir = new G4MaterialPropertiesTable();
     mptAir->AddProperty("RINDEX", energy, rIndexAir,24);
     worldMat->SetMaterialPropertiesTable(mptAir);
@@ -132,7 +205,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     mptSpec->AddProperty("SPECULARSPIKECONSTANT", energy, specularspike, 24);
     mptSpec->AddProperty("BACKSCATTERCONSTANT", energy, backscatter, 24);
     spectralonSurface->SetMaterialPropertiesTable(mptSpec);
-    
+    */
     
     
    
