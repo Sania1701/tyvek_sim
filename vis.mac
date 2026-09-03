@@ -11,5 +11,5 @@
 /vis/modeling/trajectories/create/drawByParticleID
 /vis/scene/endOfEventAction accumulate
 /vis/viewer/set/autoRefresh true
-/run/beamOn 10
+/run/beamOn 1000
 

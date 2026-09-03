@@ -37,7 +37,7 @@ MyPrimaryGenerator::MyPrimaryGenerator()
     
     fParticleGun->SetParticlePolarization(polarization);
     
-    fParticleGun->SetParticleEnergy(3.0*eV); // single energy for now but will make a range later 
+    fParticleGun->SetParticleEnergy(2.11*eV); // single energy for now but will make a range later 
     
     fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0.,-1.,0.));
     
