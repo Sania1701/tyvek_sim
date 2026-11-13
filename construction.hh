@@ -23,8 +23,8 @@ public:
     MyDetectorConstruction();
     ~MyDetectorConstruction();
     
-    void getEnergy(const G4double input[], const G4double factor,const int N, G4double output[]);
-    
+  //  void getEnergy(const G4double input[], const G4double factor,const int N, G4double output[]);
+    void getEnergy(const G4double input[], const G4double factor, const int N, G4double output[],  const G4double originalRIndex1[], const G4double originalRIndex2[],G4double sortedRIndex1[], G4double sortedRIndex2[]);
     
     virtual G4VPhysicalVolume *Construct();
     

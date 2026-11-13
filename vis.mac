@@ -1,5 +1,8 @@
 /vis/open OGL
 /vis/drawVolume
+#/run/verbose 1
+#/event/verbose 1
+#/tracking/verbose 1
 /vis/viewer/set/style wireframe 
 /vis/viewer/set/upVector 0 0 1
 /vis/viewer/set/viewpointVector 1 0 0
@@ -11,5 +14,6 @@
 /vis/modeling/trajectories/create/drawByParticleID
 /vis/scene/endOfEventAction accumulate
 /vis/viewer/set/autoRefresh true
-/run/beamOn 1000
+/vis/enable
+/run/beamOn 100
 

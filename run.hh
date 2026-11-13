@@ -11,8 +11,14 @@ public:
     MyRunAction();
     ~MyRunAction();
     
-    virtual void BeginOfRunAction(const G4Run*);
-    virtual void EndOfRunAction(const G4Run*);
+    virtual void BeginOfRunAction(const G4Run*) ;
+    virtual void EndOfRunAction(const G4Run*) ;
+        
+    
+    void AccumulatePhotons(G4int hits) { fGrandTotalPhotons += hits; }
+
+private:
+    G4int fGrandTotalPhotons = 0;
     
 };
 

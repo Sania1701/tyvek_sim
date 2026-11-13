@@ -37,7 +37,7 @@ MyPrimaryGenerator::MyPrimaryGenerator()
     
     fParticleGun->SetParticlePolarization(polarization);
     
-    fParticleGun->SetParticleEnergy(2.11*eV); // single energy for now but will make a range later 
+    fParticleGun->SetParticleEnergy(2.11*eV);
     
     fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0.,-1.,0.));
     
@@ -70,7 +70,7 @@ void MyPrimaryGenerator::GeneratePrimaries(G4Event *anEvent)
     
    // G4double energy = 1239.84/wavelength;
 
-   // fParticleGun->SetParticleEnergy(energy*eV);
+   // fParticleGun->SetParticleEnergy(2.11*eV);
     //std::ostringstream stream; 
    // stream << energy; 
   //  file_stream << stream.str() << "\n";

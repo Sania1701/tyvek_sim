@@ -11,7 +11,7 @@ MyRunAction::MyRunAction()
     man->CreateNtupleDColumn("fX");
     man->CreateNtupleDColumn("fY");
     man->CreateNtupleDColumn("fZ");
-    
+    man->CreateNtupleIColumn("PhotonHits");
     man->FinishNtuple(0);}
 
 
@@ -22,6 +22,8 @@ MyRunAction::~MyRunAction()
 
 void MyRunAction::BeginOfRunAction(const G4Run* run)
 {
+
+    fGrandTotalPhotons = 0;
 
     G4AnalysisManager *man = G4AnalysisManager::Instance();
     
@@ -40,7 +42,12 @@ void MyRunAction::BeginOfRunAction(const G4Run* run)
 }
 
 void MyRunAction::EndOfRunAction(const G4Run*)
-{
+{   
+
+
+    std::cout << "=== RUN FINISHED ===" << std::endl;
+    std::cout << "Grand Total Photons Detected: " << fGrandTotalPhotons << std::endl;
+    
     G4AnalysisManager *man = G4AnalysisManager::Instance();
     man->SetVerboseLevel(1);
     man->Write(); // write before close or root files will be sad

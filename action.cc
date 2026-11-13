@@ -1,5 +1,6 @@
 #include "action.hh" 
 #include "generator.hh"
+#include "event.hh" 
 //#include "runaction.hh"
 MyActionInitialization::MyActionInitialization()
 {}
@@ -12,13 +13,15 @@ void MyActionInitialization::Build() const
    // auto runAction = new MyRunAction();
   //  SetUserAction(runAction);
   
-  
-    
+
    // MyPrimaryGenerator *generator = new MyPrimaryGenerator(runAction);
     MyPrimaryGenerator *generator = new MyPrimaryGenerator();
     SetUserAction(generator);
     
     MyRunAction *runAction = new MyRunAction();
     SetUserAction(runAction);
+    
+    MyEventAction* eventAction = new MyEventAction(runAction);
+    SetUserAction(eventAction);
     
 }
